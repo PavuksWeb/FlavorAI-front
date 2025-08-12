@@ -1,7 +1,12 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   /* config options here */
+  images: {
+    remotePatterns: [
+      new URL('https://flavor-images-storage.s3.eu-north-1.amazonaws.com/**'),
+    ],
+  },
 };
 
 export default nextConfig;
