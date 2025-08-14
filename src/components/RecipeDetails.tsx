@@ -1,4 +1,4 @@
-import { Recipe } from '@/types/recipe';
+import { Recipe } from '@/types/recipe.t';
 import Image from 'next/image';
 
 export default function RecipeDetails(recipe: Recipe) {

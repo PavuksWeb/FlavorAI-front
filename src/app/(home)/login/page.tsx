@@ -1,3 +1,3 @@
 export default function AuthPage() {
-  return <h1>Auth page</h1>;
+  return <h1>Login page</h1>;
 }

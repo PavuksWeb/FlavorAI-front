@@ -2,7 +2,7 @@
 
 import { getRecipeById } from '@/api/recipes/getRecipeById';
 import RecipeDetails from '@/components/RecipeDetails';
-import { Recipe } from '@/types/recipe';
+import { Recipe } from '@/types/recipe.t';
 import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
@@ -20,7 +20,9 @@ export default function RecipeDetailsPage() {
     async function fetchRecipe() {
       try {
         const data = await getRecipeById(id);
-        setRecipe(data);
+        if (data) {
+          setRecipe(data);
+        }
       } catch (error) {
         console.error(error);
       }

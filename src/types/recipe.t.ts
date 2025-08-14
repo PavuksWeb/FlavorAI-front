@@ -1,3 +1,5 @@
+import { Rating } from './rating.t';
+
 export type Recipe = {
   id: number;
   title: string;
@@ -6,5 +8,6 @@ export type Recipe = {
   ingredients: string[];
   instructions: string;
   authorId: number;
+  ratings?: Rating[];
   createdAt: Date;
 };

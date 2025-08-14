@@ -1,4 +1,4 @@
-import { Recipe } from '@/types/recipe';
+import { Recipe } from '@/types/recipe.t';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -20,9 +20,8 @@ export default function RecipeCard(recipe: Recipe) {
         </div>
         <div className="flex flex-col gap-3 p-6">
           <header className="text-2xl">{recipe.title}</header>
-          <span className="text-lg">{recipe.description}</span>
+          <p className="text-lg">{recipe.description}</p>
           <span>{`${recipe.ingredients.length} ingredients`}</span>
-          <p>{recipe.instructions}</p>
         </div>
       </article>
     </Link>

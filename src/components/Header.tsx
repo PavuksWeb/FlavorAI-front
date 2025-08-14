@@ -8,7 +8,7 @@ export default function Header() {
       </Link>
       <Link
         href={'/login'}
-        className="text-xl hover:bg-blue-800 px-4 py-2 rounded-4xl"
+        className="text-xl hover:bg-blue-800 px-4 py-2 rounded-4xl transition-colors duration-400"
       >
         Log in
       </Link>

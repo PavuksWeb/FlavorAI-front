@@ -2,7 +2,7 @@
 
 import RecipeCard from './RecipeCard';
 import { useEffect, useState } from 'react';
-import { Recipe } from '@/types/recipe';
+import { Recipe } from '@/types/recipe.t';
 import { getAllRecipes } from '@/api/recipes/getAllRecipes';
 
 export default function RecipeList() {
